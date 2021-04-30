@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landlords",
+  "info": {
+    "name": "landlord",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "property_type": {
+      "type": "string"
+    },
+    "property_location": {
+      "type": "string"
+    },
+    "vacant_room": {
+      "type": "string"
+    },
+    "occupied_room": {
+      "type": "string"
+    },
+    "rent": {
+      "type": "string"
+    },
+    "property_description": {
+      "type": "text"
+    },
+    "tenants": {
+      "collection": "tenant"
+    }
+  }
+}
